@@ -31,12 +31,14 @@
                     <tr>
                         <th>PACIENTE (RG)</th>
                         <th>MEDICO (CRM)</th>
+                        <th>QUEIXA</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr th:each="consultas : ${consulta}">
                         <td th:text="${consultas.paciente.rg}"></td>
                         <td th:text="${consultas.medico.crm}"></td>
+                        <td th:text="${consultas.queixa}"></td>
                     </tr>
                     
                     <!-- <tr>
@@ -53,7 +55,7 @@
             
             <div class="btn-form">
                 <button type="submit" class="btn btn-clin" style="margin-left: 10px;" value=""> Exportar dados</button>
-                <a href="/paciente/consultas" class="btn btn-clin" style="margin-left: 10px;">Consultas Futuras</a> 
+                <a href="agendadas" class="btn btn-clin" style="margin-left: 10px;">Consultas Futuras</a> 
                 
 
             </div>
